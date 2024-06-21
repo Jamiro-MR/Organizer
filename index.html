@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Materiales</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>¡Hola, USUARIO!</h1>
+        <div class="header-buttons">
+            <button id="add-object-btn" onclick="window.location.href='newObjt.html'">
+                <img src="assets/images/add.png" alt="Añadir icon"> Añadir nuevo objeto
+            </button>
+            <button id="materials-btn">
+                <img src="assets/images/officeTools.png" alt="Materiales icon"> Materiales
+            </button>
+            <button id="logout-btn">
+                <img src="assets/images/logOut.png" alt="Logout icon"> Logout
+            </button>
+        </div>
+    </header>
+    <main>
+        <h2>Lista de materiales</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Ubicación actual</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><img src="assets/images/speaker.png" alt="Bocina icon"> Una bocina</td>
+                    <td>Centro de cómputo</td>
+                    <td>
+                        <button class="edit-btn">✏️</button>
+                        <button class="delete-btn">❌</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="assets/images/cable.png" alt="HDMI cable icon"> Cable HDMI</td>
+                    <td>Dirección</td>
+                    <td>
+                        <button class="edit-btn">✏️</button>
+                        <button class="delete-btn">❌</button>
+                    </td>
+                </tr>
+                <!-- Repeat similar rows for other materials -->
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>
